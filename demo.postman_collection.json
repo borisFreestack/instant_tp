@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "5470f386-a806-4130-8307-60690bcaa28d",
+		"name": "Youtube",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "save a clock machine",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"date\": \"{{$isoTimestamp}}\",\n    \"instant\": 1638441574,\n    \"zonedDateTime\": \"2021-12-02T10:14:41.044617+01:00\",\n    \"localDate\": \"2021-12-02\",\n    \"localDateTime\": \"2021-12-02T10:14:41.044663\",\n    \"offsetTime\": \"10:14:41.044672+01:00\",\n    \"offsetDateTime\": \"2021-12-02T10:14:41.044684+01:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list clockMachine",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
